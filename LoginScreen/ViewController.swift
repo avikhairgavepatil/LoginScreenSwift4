@@ -566,7 +566,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     {
         
         
-        var url  = "https://stockaxis.com/Webservices/android/index.aspx?action=search&activity=checkrecordsinrcbnew&"+"Mobile=\(email)"+"&Email=\(email)"
+        var url  = "&"+"Mobile=\(email)"+"&Email=\(email)"
         let service = ApiService()
         
         let urlString = url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
@@ -682,7 +682,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     func login(email:String,Password:String)
     {
-        var UrlApi = "https://stockaxis.com/Webservices/android/index.aspx?action=search&activity=checkrcbloginnew"+"&Mobile=\(email)"+"&Email=\(email)"+"&Authonitication=\(Password)"
+        var UrlApi = ""+"&Mobile=\(email)"+"&Email=\(email)"+"&Authonitication=\(Password)"
         let service = ApiService()
         
         let urlString = UrlApi.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
