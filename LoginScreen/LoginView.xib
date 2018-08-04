@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QkE-pi-WCm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6e-A3-xxB">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lWe-ro-KcO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="262"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcT-MD-DZe">
+                                        <rect key="frame" x="5" y="5" width="365" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your phone number to proceed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyY-Iq-T95">
+                                        <rect key="frame" x="6" y="33" width="362" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.6705882353" green="0.69411764710000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BcT-MD-DZe" firstAttribute="leading" secondItem="lWe-ro-KcO" secondAttribute="leading" constant="5" id="MqY-7C-LEY"/>
+                                    <constraint firstAttribute="trailing" secondItem="BcT-MD-DZe" secondAttribute="trailing" constant="5" id="RmZ-oa-6eH"/>
+                                    <constraint firstItem="BcT-MD-DZe" firstAttribute="top" secondItem="lWe-ro-KcO" secondAttribute="top" constant="5" id="g7z-j6-7et"/>
+                                </constraints>
+                            </view>
+                            <blurEffect style="light"/>
+                        </visualEffectView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="A6e-A3-xxB" firstAttribute="leading" secondItem="QkE-pi-WCm" secondAttribute="leading" id="Bea-ML-CUN"/>
+                        <constraint firstAttribute="bottom" secondItem="A6e-A3-xxB" secondAttribute="bottom" id="dBp-W5-k9M"/>
+                        <constraint firstItem="A6e-A3-xxB" firstAttribute="top" secondItem="QkE-pi-WCm" secondAttribute="top" id="ni6-A6-Jy6"/>
+                        <constraint firstAttribute="trailing" secondItem="A6e-A3-xxB" secondAttribute="trailing" id="o8L-i7-p16"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QkE-pi-WCm" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="V0g-dz-a7p"/>
+                <constraint firstItem="QkE-pi-WCm" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="VoK-Kj-BaX"/>
+                <constraint firstItem="QkE-pi-WCm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eSN-mI-6lS"/>
+                <constraint firstItem="QkE-pi-WCm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="heS-7N-O7A"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="35"/>
+        </view>
+    </objects>
+</document>
